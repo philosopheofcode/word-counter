@@ -129,3 +129,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 /.idea/
+/e2e-test-suite/target/
+/e2e-test-suite/build/
