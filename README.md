@@ -82,6 +82,6 @@ in order to run the suite from terminal you should install Java 17 and Maven 3.8
 then you should open the terminal and go within the **./word-counter/e2e-test-suite** folder and from there launch
 
 ```bash
-mvn clean verift
+mvn clean verify
 ```
 
