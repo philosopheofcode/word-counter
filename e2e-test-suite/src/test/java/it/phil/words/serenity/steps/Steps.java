@@ -34,4 +34,10 @@ public class Steps extends UIInteractions {
     }
 
 
+    @Then("I see the following error message {string}")
+    public void iSeeTheFollowingErrorMessage(String errorMessage) {
+        String errorMessageActual = $("#error-message").getText();
+
+        Serenity.reportThat("The keyword should appear in the sidebar heading", () -> Assert.assertEquals(errorMessage, errorMessageActual));
+    }
 }
