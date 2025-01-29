@@ -66,9 +66,9 @@ In order to launch the e2e suite you have at least two different approaches:
 
 Before launching test suite with one of below options it's mandatory launch the application and change the url where the
 application is running
-updating the ```javait.phil.words.serenity.steps.Steps.iSeeAWordCountingForm``` method which currently is the
-```java openUrl("http://localhost:5173/");``` but it must be "
-```java openUrl("url-where-the-application-is-deployed");```"
+updating the ```it.phil.words.serenity.steps.Steps.iSeeAWordCountingForm``` method which currently has the following line
+```openUrl("http://localhost:5173/");``` which must be updated reflect your setup so something like this "
+```openUrl("url-where-the-application-is-deployed");```"
 
 #### IDE e2e suite
 
