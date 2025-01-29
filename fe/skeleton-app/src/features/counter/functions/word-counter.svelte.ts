@@ -1,3 +1,3 @@
 export function countWords(words: string): number {
-    return 1;
+    return words.split(" ").length;
 }
