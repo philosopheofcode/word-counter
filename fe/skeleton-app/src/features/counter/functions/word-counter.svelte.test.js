@@ -19,3 +19,15 @@ test('Count 3 words', () => {
 
     expect(howMany).toEqual(3);
 });
+
+test('Count 2 words with spaces', () => {
+    let howMany = countWords("one     two");
+
+    expect(howMany).toEqual(2);
+});
+
+test('Count 2 words with spaces before and after', () => {
+    let howMany = countWords("     one     two     ");
+
+    expect(howMany).toEqual(2);
+});
